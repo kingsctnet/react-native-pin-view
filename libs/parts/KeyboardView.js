@@ -21,10 +21,13 @@ const KeyboardView = ({ keyboardOnPress, pinLength, onComplete, bgColor, returnT
                           disabled={onPressActive}>
           <Animated.View style={[style, {
             backgroundColor: bgColor,
+            borderColor: '#f1f1f1',
+            borderWidth: 1
           }]}>
             <Text style={[styles[1], {
               color: textColor,
               opacity: 1,
+              fontSize: 30
             }]}>{item}</Text>
           </Animated.View>
         </TouchableOpacity>
