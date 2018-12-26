@@ -12,7 +12,9 @@ const InputView = ({ pinViewAnim, animatedInputIndex, pinLength, bgColor, active
         key={"passwordItem-" + index}
         style={[styles[1], {
           backgroundColor: bgColor,
-          opacity: bgOpacity
+          opacity: bgOpacity,
+          borderColor: '#000',
+          borderWidth: 1
         }]}/>;
   };
 
@@ -21,7 +23,9 @@ const InputView = ({ pinViewAnim, animatedInputIndex, pinLength, bgColor, active
         key={"passwordItem-" + index}
         style={[styles[2], {
           backgroundColor: activeBgColor,
-          opacity: 1
+          opacity: 1,
+          borderColor: '#000',
+          borderWidth: 1
         }]}/>
   };
   const ShowInput = (pinLength) => {
