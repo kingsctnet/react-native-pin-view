@@ -30,8 +30,8 @@ export default StyleSheet.create({
   keyboardViewItem           : {
     alignItems      : 'center',
     justifyContent  : 'center',
-    height          : 75,
-    width           : 75,
+    height          : 55,
+    width           : 55,
     marginHorizontal: 20,
     marginVertical  : 5,
     borderRadius    : 75 / 2,
