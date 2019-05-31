@@ -19,7 +19,7 @@ const KeyboardView = ({
     let style;
     let onPressActive;
     let icon_Size = pinSize * 1.9 ;
-    console.log('pinSize: ',pinSize)
+    
     if (item === deleteText) {
       onPressActive = animatedDeleteButtonOnPress;
       style = [styles[0], {
