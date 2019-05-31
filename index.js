@@ -78,11 +78,11 @@ class PinView extends React.Component {
   };
 
   render() {
-    const { titleText, pinLength, buttonTextColor, returnType, buttonBgColor, inputBgColor, onComplete, disabled, inputActiveBgColor, inputBgOpacity, deleteText } = this.props;
+    const { titleText, pinLength, pinSize, buttonTextColor, returnType, buttonBgColor, inputBgColor, onComplete, disabled, inputActiveBgColor, inputBgOpacity, deleteText } = this.props;
     return (
         <View pointerEvents={disabled ? "none" : undefined} styles={{flex: 1}}>
           <View style={{paddingVertical: 20}}>
-            <Text style={{color: 'blue', fontSize: 20, fontWeight: '700', textAlign: 'center'}}>{titleText}</Text>
+            <Text style={{color: 'blue', fontSize: 20, fontWeight: '600', textAlign: 'center'}}>{titleText}</Text>
           </View>
           <InputView
               bgOpacity={inputBgOpacity}
@@ -100,6 +100,7 @@ class PinView extends React.Component {
                 textColor={buttonTextColor}
                 animatedDeleteButton={this.state.animatedDeleteButton}
                 pinLength={pinLength}
+                pinSize={pinSize}
                 deleteText={deleteText}
                 onComplete={onComplete}
                 animatedDeleteButtonOnPress={this.state.animatedDeleteButtonOnPress}
@@ -122,6 +123,7 @@ PinView.defaultProps = {
   returnType: 'string',
   inputBgOpacity: 0.1,
   disabled: false,
+  pinSize: 26,
   clear: false,
 };
 PinView.propTypes = {
@@ -136,6 +138,7 @@ PinView.propTypes = {
   inputBgOpacity: PropTypes.number,
   onComplete: PropTypes.func.isRequired,
   pinLength: PropTypes.number.isRequired,
+  pinSize: PropTypes.number,
   clear: PropTypes.bool,
 };
 
