@@ -27,7 +27,8 @@ class PinView extends React.Component {
         this.state.animatedDeleteButton, // The value to drive
         {
           toValue: status ? 1 : 0, // Animate to final value of 1
-          duration: 100
+          duration: 100,
+          useNativeDriver: true
         }
     ).start(); // Start the animation
     this.setState({
